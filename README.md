@@ -81,3 +81,25 @@ cd redis
 本项目用于收集常用的一些软件的`docker-compose.yml`用于环境的快速安装
 
 大家也可以在本项目提RP 贡献其他软件的`docker-compose.yml`
+
+
+
+## docker-compose安装
+
+```shell
+sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+```
+
+测试是否安装成功：
+
+```shell
+docker-compose --version
+```
+
+输出：
+
+```shell
+docker-compose version 1.24.1, build 4667896b
+```
